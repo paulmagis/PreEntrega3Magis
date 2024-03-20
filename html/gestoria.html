@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"> 
+       <!--Boy a poner el link de bootstrap-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Gestoria</title>
+</head>
+<body id="body-gestoria">
+    <!--Comienza el heder-->
+    <header class="header">
+        <img  id="header-logo-glock" src="../imagenes/Glock.png" alt="Logo de la escuela de tiro">
+        <div>
+            <h1 class="header-titulo-pagina">Gestoria</h1>
+        </div> 
+        <div class="header-nav">
+        <!-- Esto es lo que agregue de bootstrap -->
+        <!-- navbar-expand-lg: Indica que la barra de navegación se expandirá (mostrará los elementos de navegación horizontalmente) en pantallas grandes ("lg" significa "large") y se colapsará en pantallas más pequeñas. -->
+            <nav class=" col-9 navbar navbar-expand-lg ">
+                <!--Crea un contenedor fluido que usa el 100% del ancho de la ventana del navegador en todos los tamaños de dispositivos. -->
+                <div class="container-fluid">
+                    <!--Esto lo dejo para que me deje enseñanzas pero es solo el nombre de la barra de navegacion 
+                        <a class="navbar-brand" href="#">Nombre</a> -->
+                 <!--  Button... Este botón es para dispositivos móviles. Permite mostrar u ocultar los elementos de la barra de navegación cuando no hay suficiente espacio horizontal. -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> 
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Pagina Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#Contactenos">Contactenos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mas Contenidos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="poligono.html">Poligono</a></li>
+                          <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li> -->
+                          <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html">Quienes Somos</a></li>
+                        </ul>
+                      </li>
+                   
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+              <!-- Aqui termina lo que agregue de bootstrap -->
+        </div>        
+    </header>
+    <!--Aqui termina el heder-->
+      <!--Aca pongo secciones con los tramites-->
+      <section class="tramites">
+        <p><h2>Tenencia de Armas</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis quia nulla a quaerat! Neque, aliquam. Ullam id incidunt molestiae saepe aut exercitationem unde excepturi, maxime delectus quas provident eum?</p>
+        <p><h2>Porte de armas</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti natus beatae. Ratione labore magnam similique. Id doloremque cupiditate sapiente possimus sint molestiae reprehenderit ipsum, perferendis inventore, voluptatum laborum. Explicabo.</p>
+        <p><h2>Cambio de Propietario</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nesciunt quidem obcaecati adipisci tenetur architecto, laboriosam laudantium, molestiae corrupti asperiores amet saepe fuga, iste voluptatem! Sequi rerum minima ipsam quis.</p>
+    </section>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52860.44465713396!2d-56.24776913851808!3d-34.10083252327891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a102b5a0ba98df%3A0x2d2df4032fa1cde5!2s94000%20Florida%2C%20Departamento%20de%20Florida!5e0!3m2!1ses-419!2suy!4v1708439152271!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="form.php" method="POST">
+            <label for="">Nombre y Apellido</label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Jose Perez">
+            <p id="Contactenos">Consulta</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="">
+        </form>
+    </footer>
+      <!--Aqui agrego el script para el bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
