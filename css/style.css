@@ -56,7 +56,14 @@
     width: 300px; /* O el tamaño que prefieras */
     height: auto; /* Mantiene la proporci*/
 } 
+.header-titulo-pagina {
+    font-size: 60px; /* Ajusta este valor al tamaño que prefieras */
+    font-weight: bold; /* Hace el texto más grueso */
+    white-space: normal; /* Permite que el título se ajuste en varias líneas si es necesario */
+}
+
 .header-title-page {
+    
     white-space: normal; /* Asegura que el texto del h1 pueda pasar a la siguiente línea si es necesario */
 }
 /*Aqui voy a cambiar la fuente de los nav-link del nav de bootstrap */
@@ -154,19 +161,7 @@ nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como
     color: #112607;
     background-color: #E3F26D;
 }
-#BodyProductos .GridConteinter {
-    border: 3px solid #112607;
-    display: grid;
-    row-gap: 10px;
-    column-gap: 10px;
-    /*Esto lo centra atento Paul el add hay que ver como le damos espacio*/
-    justify-content: center; 
-   
-    /*grid-template-rows: repeat(5, 100px);*/
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(7, auto);
-    margin-bottom: 10px;
-}
+
 #BodyProductos .grid-item {
     border: 1px solid #112607;
     
@@ -194,7 +189,19 @@ nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como
 }
 /*media cuerry para el heder*/
 @media (min-width: 1024px) { /* Ajusta según tu punto de interrupción deseado para escritorio */
-   
+    #BodyProductos .GridConteinter {
+        border: 3px solid #112607;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        /*Esto lo centra atento Paul el add hay que ver como le damos espacio*/
+        justify-content: center; 
+       
+        /*grid-template-rows: repeat(5, 100px);*/
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(7, auto);
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -209,7 +216,7 @@ nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como
     .header-titulo-pagina {
         order: -1; /* Asegura que el título quede al final */
     }
-}/
+}
 
 
 /* Pantallas de móvil (por ejemplo, menos de 768px) */
@@ -223,6 +230,50 @@ nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como
     .header-titulo-pagina {
         order: 2; /* El título queda al final */
     }
+    #BodyProductos .GridConteinter {
+        display: flex; /* Activa Flexbox para el contenedor */
+        flex-direction: column; /* Organiza los ítems en una columna */
+    }
+    }
+@media (max-width: 767px) {
+ 
+    #BodyProductos .GridConteinter {
+        display: flex; /* Activa Flexbox para el contenedor */
+        flex-direction: column; /* Organiza los ítems en una columna */
+    }
 }
+/*Carrusel*/
+.carousel-item img {
+    height: 500px; /* Ajusta a la altura deseada */
+    object-fit: cover; /* Mantiene el aspecto de la imagen */
+}
+.carousel-caption h5 {
+    color: #E3F26D; /* Cambia el color */
+    font-size: 50px; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Hace el texto negrita */
+    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
+    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+    padding: 5px; /* Añade espacio alrededor del texto */
+}
+
+.carousel-caption p {
+    color: #E3F26D; /* Cambia el color */
+    font-size: 40px; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Hace el texto negrita */
+    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
+    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+    padding: 5px; /* Añade espacio alrededor del texto */
+}
+.carousel-caption a {
+    color: #E3F26D; /* Cambia el color */
+    font-size: 20px; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Hace el texto negrita */
+    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
+    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+    padding: 5px; /* Añade espacio alrededor del texto */
+}
+
+/*INDEX*/
+
 
 
