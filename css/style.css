@@ -156,6 +156,11 @@
     flex-direction: column; /* Organiza los ítems en una columna */
   }
 }
+#body-poligono {
+  color: #081304;
+  background-color: #E3F26D;
+}
+
 header {
   display: flex; /*Activamos el Flexbox*/
   flex-direction: row; /* Comienza apilando los elementos verticalmente */
