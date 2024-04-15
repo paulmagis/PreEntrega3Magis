@@ -1,0 +1,34 @@
+
+
+//mixin sin poarametros
+@mixin Header-flex{
+    display: flex;/*Activamos el Flexbox*/
+    flex-direction: row; /* Comienza apilando los elementos verticalmente */
+    align-items: center/*centramos los elementos verticalmetne*/;
+    justify-content: space-around; /* Distribuimos el espacio: la imagen a la izquierda, el nav a la derecha, y el h1 en el centro */
+    text-align: center;/*Asegura que el texto dentro del h1 ete centrado*/
+    flex-wrap: wrap;
+}
+//mixin for header logo con parametros
+@mixin Header-logo($width, $height){
+    flex: 0,5 2 0,5;
+    padding: 0 10px;
+    width : $width;
+    height: $height;  
+}
+// mixin for header nav
+@mixin Header-nav{
+    flex: 0,5 2 0,5;
+    padding: 0 10px;
+}
+//mixin for titulo-pagina
+@mixin Header-titulo-pagina{
+    flex: 0,5 2 0,5;
+    padding: 0 10px;
+    font-family: "Kode Mono", monospace;
+    
+    font-size: $Titulo-size; /* Ajusta este valor al tamaño que prefieras */
+    font-weight: bold; /* Hace el texto más grueso */
+    white-space: normal; /* Permite que el título se ajuste en varias líneas si es necesario */
+
+}

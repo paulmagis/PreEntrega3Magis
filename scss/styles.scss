@@ -1,0 +1,42 @@
+@import "reset";
+@import "index";
+@import "body-nosotros";
+@import "body-productos";
+@import "utilities/mixin";
+@import "utilities/header";
+@import "utilities/extend";
+@import "utilities/variables";
+
+
+// ejemplo extend para correjir 
+//@extend %Imagen-catalogo;
+
+  .header {
+    @include Header-flex;
+        #logo-glock{
+          @include Header-logo(300px, auto);
+        }
+        .navegador {
+          @include Header-nav;
+        }
+        .titulo-pagina {
+          @include Header-titulo-pagina;
+        }
+        /*Aqui voy a cambiar la fuente de los nav-link del nav de bootstrap */
+
+      nav .navbar-nav .nav-link,
+      nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como el activo */
+        color: $BG-color;
+      }
+/*Con esto le cambie el color al icono de la hamburguesa */
+      .navbar-toggler-icon {
+        background-color: $Header-color;
+      }
+      .dropdown-menu .dropdown-item {
+        color: $Header-color; /* Cambia el color de la fuente a un verde claro */
+        background-color: $Header-bg-color; /* Cambia el color de fondo a un verde oscuro */
+      }
+      .dropdown-menu .dropdown-item:hover {
+        background-color: $background-color-hover; /* Un verde ligeramente más claro para el efecto hover */
+      }
+}

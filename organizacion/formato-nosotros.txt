@@ -1,3 +1,26 @@
+scss/
+|
+|-- base/
+|   |-- _reset.scss       # Reset/normalize
+|   |-- _typography.scss  # Estilos de tipografía
+|
+|-- components/
+|   |-- _buttons.scss     # Estilos de botones
+|   |-- _cards.scss       # Estilos de tarjetas
+|
+|-- layouts/
+|   |-- _header.scss      # Estilos del encabezado
+|   |-- _footer.scss      # Estilos del pie de página
+|   |-- _grid.scss        # Sistema de cuadrícula
+|
+|-- utilities/
+|   |-- _variables.scss   # Colores, tipografías, etc.
+|   |-- _mixins.scss      # Mixins
+|
+|-- main.scss             # Archivo principal
+
+
+
 body id="BodyNosotros"
     <header class="header">
         <img id="header-logo-glock"

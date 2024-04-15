@@ -1,0 +1,60 @@
+@import "utilities/colors";
+@import "utilities/variables";
+#BodyNosotros  {
+    color: $Text-color1;
+    background-color: $BG-color;
+     main {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        margin: 100px;   
+        flex-wrap: wrap;  
+        .Textos {
+            text-align: center;
+            h2  {
+                margin: 10px;     
+                span {
+                    display: block;
+                }
+            }
+            .Boton {
+                margin: 10px;
+                background-color: $Boton-BG-color;
+                padding: 10px;
+                color: $Header-color;
+                display: inline-block;
+                box-shadow: 5px 5px 10px $Shadow-color ;
+                   
+            }
+        }
+        .Imagen {
+            width: $Imagen-Body-Nosotros;     
+         }
+        .Imagen img:hover {
+            width: $Imagen-Body-Nosotros-hover;     
+         }
+    }
+    section {
+        background-color: $Header-bg-color;
+        color: $Header-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin: 1%;   
+        padding: 20px;  
+        box-shadow: 5px 5px 15px $Shadow-color ;
+        flex-wrap: wrap;
+        div {
+            width: $Div-width-Body-Nosotros;
+            text-align: center; 
+            img {
+                width: $Div-img-Body-Nosotros;
+            }
+        }
+    }
+    footer {
+        margin-top: $Footer-Body-Nosotros;
+        text-align: center; 
+    }
+}

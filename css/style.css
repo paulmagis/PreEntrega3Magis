@@ -1,279 +1,216 @@
-/*Para comentar una seleccion es ctrl k + ctrl u*/
-/*Estos son los parametros generales*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*bodys lo hice haci porque cuando puse bootstrap cambio todo*/
-#body-index{
-    color: #081304;
-    background-color: #E3F26D;
-
+#body-index {
+  color: #081304;
+  background-color: #E3F26D;
 }
-#body-cursos{
-    color: #081304;
-    background-color: #E3F26D;
-
+#body-index #carouselExampleCaptions .carousel-item img {
+  height: 500px; /* Ajusta a la altura deseada */
+  object-fit: cover; /* Mantiene el aspecto de la imagen */
 }
-#body-poligono{
-    color: #081304;
-    background-color: #E3F26D;
-
+#body-index #carouselExampleCaptions .carousel-caption h5 {
+  color: #E3F26D; /* Cambia el color */
+  font-size: 50px; /* Cambia el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto negrita */
+  text-shadow: 1px 1px 0 black; /* Sombra del texto para hacerlo parecer más ancho */
+  background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+  padding: 5px; /* Añade espacio alrededor del texto */
 }
-#body-gestoria{
-    color: #081304;
-    background-color: #E3F26D;
+#body-index #carouselExampleCaptions .carousel-caption p {
+  color: #E3F26D; /* Cambia el color */
+  font-size: 40px; /* Cambia el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto negrita */
+  text-shadow: 1px 1px 0 black; /* Sombra del texto para hacerlo parecer más ancho */
+  background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+  padding: 5px; /* Añade espacio alrededor del texto */
 }
-#BodyNosotros{
-    color: #112607;
-    background-color: #E3F26D;
-}
-/*Aqui trabajamos el HEADER lo defino como una class*/
-
-.header {
-    background-color: #2C4018;
-    color: #b3ce5a;
-    margin: 1%;
-    padding: 2% 2% 2% 0%;
-    display: flex;/*Activamos el Flexbox*/
-    flex-direction: row; /* Comienza apilando los elementos verticalmente */
-    align-items: center/*centramos los elementos verticalmetne*/;
-    justify-content: space-around; /* Distribuimos el espacio: la imagen a la izquierda, el nav a la derecha, y el h1 en el centro */
-    text-align: center;/*Asegura que el texto dentro del h1 ete centrado*/
-    flex-wrap: wrap;
-    box-shadow: 5px 5px 15px black ;  
-}
-.header-logo-glock, .header-nav, div {
-    flex: 0,5 2 0,5; /* Esto da a cada elemento la capacidad de expandirse y ocupar espacio, con énfasis en el div del h1 */
-    padding: 0 10px; /* Añade un poco de espacio alrededor para evitar que los elementos se toquen */
-    /*Aqui le puse el estilo que baje de google*/
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-}
-#header-logo-glock {
-    width: 300px; /* O el tamaño que prefieras */
-    height: auto; /* Mantiene la proporci*/
-} 
-.header-titulo-pagina {
-    font-size: 60px; /* Ajusta este valor al tamaño que prefieras */
-    font-weight: bold; /* Hace el texto más grueso */
-    white-space: normal; /* Permite que el título se ajuste en varias líneas si es necesario */
+#body-index #carouselExampleCaptions .carousel-caption a {
+  color: #E3F26D; /* Cambia el color */
+  font-size: 20px; /* Cambia el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto negrita */
+  text-shadow: 1px 1px 0 black; /* Sombra del texto para hacerlo parecer más ancho */
+  background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
+  padding: 5px; /* Añade espacio alrededor del texto */
 }
 
-.header-title-page {
-    
-    white-space: normal; /* Asegura que el texto del h1 pueda pasar a la siguiente línea si es necesario */
+#BodyNosotros {
+  color: #081304;
+  background-color: #E3F26D;
 }
-/*Aqui voy a cambiar la fuente de los nav-link del nav de bootstrap */
-
-nav .navbar-nav .nav-link,
-nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como el activo */
-    color: #b3ce5a;
-}
-/*Con esto le cambie el color al icono de la hamburguesa */
-.navbar-toggler-icon {
-   
-    background-color: #b3ce5a;
-   
-}
-
-.dropdown-menu .dropdown-item {
-    color: #b3ce5a; /* Cambia el color de la fuente a un verde claro */
-    background-color: #2C4018; /* Cambia el color de fondo a un verde oscuro */
-}
-.dropdown-menu .dropdown-item:hover {
-    background-color: #3e5c2a; /* Un verde ligeramente más claro para el efecto hover */
-}
-/******************************Nosotrs **************/
-
-
-
 #BodyNosotros main {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-    margin: 100px;   
-    flex-wrap: wrap;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+  flex-wrap: wrap;
 }
-/*Esto alinea el texto al centro*/
 #BodyNosotros main .Textos {
-    text-align: center;
+  text-align: center;
 }
-/*deja un margen para que no quede peguado*/
-#BodyNosotros main .Textos  h2  {
-    margin: 10px;     
+#BodyNosotros main .Textos h2 {
+  margin: 10px;
 }
-/*  cambiar su comportamiento de visualización de en línea (inline) a bloque (block), o viseversa */
 #BodyNosotros main .Textos h2 span {
-    display: block;
+  display: block;
 }
-/*Esto le da formato al boton */
 #BodyNosotros main .Textos .Boton {
-    margin: 10px;
-    background-color: #112607;
-    padding: 10px;
-    color: #b3ce5a;
-    display: inline-block;
-    box-shadow: 5px 5px 10px black ;
-       
+  margin: 10px;
+  background-color: #112607;
+  padding: 10px;
+  color: #b3ce5a;
+  display: inline-block;
+  box-shadow: 5px 5px 10px black;
 }
-/*Aqui quiero definir el  tamano y usar el hover */
 #BodyNosotros main .Imagen {
-    width: 300px;     
- }
- #BodyNosotros main .Imagen img:hover {
-     width: 400px;     
-  }
-/*Damos formato a la ultima seccion*/
+  width: 300px;
+}
+#BodyNosotros main .Imagen img:hover {
+  width: 400px;
+}
 #BodyNosotros section {
-    background-color: #2C4018;
-    color: #b3ce5a;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin: 1%;   
-    padding: 20px;  
-    box-shadow: 5px 5px 15px black ;
-    flex-wrap: wrap;
+  background-color: #2C4018;
+  color: #b3ce5a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+  padding: 20px;
+  box-shadow: 5px 5px 15px black;
+  flex-wrap: wrap;
 }
-/*Le doy tamaño a cada div de la seccion*/
 #BodyNosotros section div {
-    width: 500px;
+  width: 500px;
+  text-align: center;
 }
-/*Le doy tamaño a cada imagen*/
 #BodyNosotros section div img {
-    width: 200px;
-}
-
-
-#BodyNosotros section div {
-    text-align: center; 
+  width: 200px;
 }
 #BodyNosotros footer {
-    margin-top: 20 px;
-    text-align: center; 
-}
-/******************************PRODUCTOS********************************/
-#BodyProductos {
-    color: #112607;
-    background-color: #E3F26D;
+  margin-top: 20px;
+  text-align: center;
 }
 
+#BodyProductos {
+  color: #081304;
+  background-color: #E3F26D;
+}
 #BodyProductos .grid-item {
-    border: 1px solid #112607;
-    
+  border: 1px solid #081304;
 }
 #BodyProductos .ProductoSection {
-    display: flex;
+  display: flex;
 }
-/*Esto le da el tamaño a la imagen*/
 #BodyProductos .ProductoImagen img {
-    width: 300px;
-    height: 225px;
+  width: 300px;
+  height: 225px;
 }
-/*Esto usa hver para agrandar las imagenes */
-#BodyProductos .ProductoImagen img:hover{
-    width: 500px;
-    height: 425px;
+#BodyProductos .ProductoImagen img:hover {
+  width: 500px;
+  height: 425px;
 }
 #BodyProductos .ProductoImagenTexto {
-    width: 280px;
-    margin: 20px;
+  width: 280px;
+  margin: 20px;
 }
-#BodyProductos .adds{
-    grid-column: 3/3;
-    grid-row: 1/7;
+#BodyProductos .adds {
+  grid-column: 3/3;
+  grid-row: 1/7;
 }
+
 /*media cuerry para el heder*/
 @media (min-width: 1024px) { /* Ajusta según tu punto de interrupción deseado para escritorio */
-    #BodyProductos .GridConteinter {
-        border: 3px solid #112607;
-        display: grid;
-        row-gap: 10px;
-        column-gap: 10px;
-        /*Esto lo centra atento Paul el add hay que ver como le damos espacio*/
-        justify-content: center; 
-       
-        /*grid-template-rows: repeat(5, 100px);*/
-        grid-template-columns: auto auto auto;
-        grid-template-rows: repeat(7, auto);
-        margin-bottom: 10px;
-    }
-    
+  #BodyProductos .GridConteinter {
+    border: 3px solid #081304;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    /*Esto lo centra atento Paul el add hay que ver como le damos espacio*/
+    justify-content: center;
+    /*grid-template-rows: repeat(5, 100px);*/
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(7, auto);
+    margin-bottom: 10px;
+  }
 }
-
-
-/* Pantallas de tablet (por ejemplo, anchos de 768px o más) */
-/* Pantallas de tablet (por ejemplo, anchos de 768px o más) */
-@media (min-width: 768px) and (max-width: 1024px) {
-   
-    .header-nav, #header-logo-glock {
-        order: 2; /* Mueve el logo y el menú al inicio */
-    }
-    .header-titulo-pagina {
-        order: -1; /* Asegura que el título quede al final */
-    }
-}
-
-
 /* Pantallas de móvil (por ejemplo, menos de 768px) */
 @media (max-width: 767px) {
-    .header-nav {
-        order: -1; /* Mueve el menú al inicio */
-    }
-    #header-logo-glock {
-        order: 1; /* Mantiene el logo en el medio */
-    }
-    .header-titulo-pagina {
-        order: 2; /* El título queda al final */
-    }
-    #BodyProductos .GridConteinter {
-        display: flex; /* Activa Flexbox para el contenedor */
-        flex-direction: column; /* Organiza los ítems en una columna */
-    }
-    }
+  .header-nav {
+    order: -1; /* Mueve el menú al inicio */
+  }
+  #header-logo-glock {
+    order: 1; /* Mantiene el logo en el medio */
+  }
+  .header-titulo-pagina {
+    order: 2; /* El título queda al final */
+  }
+}
 @media (max-width: 767px) {
- 
-    #BodyProductos .GridConteinter {
-        display: flex; /* Activa Flexbox para el contenedor */
-        flex-direction: column; /* Organiza los ítems en una columna */
-    }
+  #BodyProductos .GridConteinter {
+    display: flex; /* Activa Flexbox para el contenedor */
+    flex-direction: column; /* Organiza los ítems en una columna */
+  }
 }
-/*Carrusel*/
-.carousel-item img {
-    height: 500px; /* Ajusta a la altura deseada */
-    object-fit: cover; /* Mantiene el aspecto de la imagen */
-}
-.carousel-caption h5 {
-    color: #E3F26D; /* Cambia el color */
-    font-size: 50px; /* Cambia el tamaño de la fuente */
-    font-weight: bold; /* Hace el texto negrita */
-    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
-    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
-    padding: 5px; /* Añade espacio alrededor del texto */
-}
-
-.carousel-caption p {
-    color: #E3F26D; /* Cambia el color */
-    font-size: 40px; /* Cambia el tamaño de la fuente */
-    font-weight: bold; /* Hace el texto negrita */
-    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
-    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
-    padding: 5px; /* Añade espacio alrededor del texto */
-}
-.carousel-caption a {
-    color: #E3F26D; /* Cambia el color */
-    font-size: 20px; /* Cambia el tamaño de la fuente */
-    font-weight: bold; /* Hace el texto negrita */
-    text-shadow: 1px 1px 0 #000; /* Sombra del texto para hacerlo parecer más ancho */
-    background-color: rgba(44, 64, 24, 0.5); /* Verde oscuro con 50% de transparencia */
-    padding: 5px; /* Añade espacio alrededor del texto */
+header {
+  display: flex; /*Activamos el Flexbox*/
+  flex-direction: row; /* Comienza apilando los elementos verticalmente */
+  align-items: center;
+  justify-content: space-around; /* Distribuimos el espacio: la imagen a la izquierda, el nav a la derecha, y el h1 en el centro */
+  text-align: center; /*Asegura que el texto dentro del h1 ete centrado*/
+  flex-wrap: wrap;
+  background-color: #2C4018;
+  color: #b3ce5a;
+  margin: 1%;
+  padding: 2% 2% 2% 0%;
+  box-shadow: 5px 5px 15px black;
 }
 
-/*INDEX*/
+.header {
+  display: flex; /*Activamos el Flexbox*/
+  flex-direction: row; /* Comienza apilando los elementos verticalmente */
+  align-items: center;
+  justify-content: space-around; /* Distribuimos el espacio: la imagen a la izquierda, el nav a la derecha, y el h1 en el centro */
+  text-align: center; /*Asegura que el texto dentro del h1 ete centrado*/
+  flex-wrap: wrap;
+  /*Aqui voy a cambiar la fuente de los nav-link del nav de bootstrap */
+  /*Con esto le cambie el color al icono de la hamburguesa */
+}
+.header #logo-glock {
+  flex: 0, 5 2 0, 5;
+  padding: 0 10px;
+  width: 300px;
+  height: auto;
+}
+.header .navegador {
+  flex: 0, 5 2 0, 5;
+  padding: 0 10px;
+}
+.header .titulo-pagina {
+  flex: 0, 5 2 0, 5;
+  padding: 0 10px;
+  font-family: "Kode Mono", monospace;
+  font-size: 60px; /* Ajusta este valor al tamaño que prefieras */
+  font-weight: bold; /* Hace el texto más grueso */
+  white-space: normal; /* Permite que el título se ajuste en varias líneas si es necesario */
+}
+.header nav .navbar-nav .nav-link,
+.header nav .navbar-nav .nav-link.active { /* Esto cubre tanto los enlaces normales como el activo */
+  color: #E3F26D;
+}
+.header .navbar-toggler-icon {
+  background-color: #b3ce5a;
+}
+.header .dropdown-menu .dropdown-item {
+  color: #b3ce5a; /* Cambia el color de la fuente a un verde claro */
+  background-color: #2C4018; /* Cambia el color de fondo a un verde oscuro */
+}
+.header .dropdown-menu .dropdown-item:hover {
+  background-color: #3e5c2a; /* Un verde ligeramente más claro para el efecto hover */
+}
 
-
-
+/*# sourceMappingURL=style.css.map */
