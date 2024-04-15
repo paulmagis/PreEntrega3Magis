@@ -1,6 +1,19 @@
 @import "utilities/colors";
 @import "utilities/variables";
+@import "utilities/mixin";
 #body-poligono  {
     color: $Text-color1;
     background-color: $BG-color;
+    .grid-container-rows {
+        @include grid-display-rows($num-rows, $gap);
+        .grid-item {
+            background-color: $BG-color;
+            border: 1px solid darken(black, 20%);
+            padding: 20px;
+            text-align: center;
+            .grid-container-column {
+                @include grid-display-columns($num-cols, $gap);
+            }
+        }
+    }
 }

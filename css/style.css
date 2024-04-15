@@ -160,6 +160,23 @@
   color: #081304;
   background-color: #E3F26D;
 }
+#body-poligono .grid-container-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: column;
+}
+#body-poligono .grid-container-rows .grid-item {
+  background-color: #E3F26D;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
 
 header {
   display: flex; /*Activamos el Flexbox*/
