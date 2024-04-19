@@ -1,0 +1,67 @@
+@import "utilities/colors";
+@import "utilities/variables";
+#BodyProductos {
+    color: $Text-color1;
+    background-color: $BG-color;
+    .grid-item {
+        border: 1px solid $Text-color1;
+    }
+    .ProductoSection {
+        display: flex;
+    }
+    .ProductoImagen img {
+        width: $Producto-Imagen-BodyProductosW;
+        height: $Producto-Imagen-BodyProductosH;
+    }
+    .ProductoImagen img:hover{
+        width: $Producto-Imagen-BodyProductosW-hover;
+        height: $Producto-Imagen-BodyProductosH-hover;
+    }
+    .ProductoImagenTexto {
+        width: $Producto-Imagen-TextoProductosW;
+        margin: $Producto-Imagen-TextoProductosH;
+    }
+    .adds{
+        grid-column: 3/3;
+        grid-row: 1/7;
+    }
+}
+/*media cuerry para el heder*/
+@media (min-width: 1024px) { /* Ajusta según tu punto de interrupción deseado para escritorio */
+    #BodyProductos {
+        .GridConteinter {
+        border: 3px solid $Text-color1;
+        display: grid;
+        row-gap: $row-column-grap;
+        column-gap: $row-column-grap;
+        /*Esto lo centra atento Paul el add hay que ver como le damos espacio*/
+        justify-content: center; 
+       
+        /*grid-template-rows: repeat(5, 100px);*/
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(7, auto);
+        margin-bottom: $row-column-grap;
+        }
+    }  
+}
+
+/* Pantallas de móvil (por ejemplo, menos de 768px) */
+@media (max-width: 767px) {
+    .header-nav {
+        order: -1; /* Mueve el menú al inicio */
+    }
+    #header-logo-glock {
+        order: 1; /* Mantiene el logo en el medio */
+    }
+    .header-titulo-pagina {
+        order: 2; /* El título queda al final */
+    }
+  
+    }
+@media (max-width: 767px) {
+ 
+    #BodyProductos .GridConteinter {
+        display: flex; /* Activa Flexbox para el contenedor */
+        flex-direction: column; /* Organiza los ítems en una columna */
+    }
+}
