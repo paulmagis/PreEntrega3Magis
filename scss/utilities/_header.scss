@@ -1,0 +1,12 @@
+
+
+
+
+header {
+    @include Header-flex;
+      background-color: $Header-bg-color;
+      color: $Header-color;
+      margin: 1%;
+      padding: 2% 2% 2% 0%;
+      box-shadow: 5px 5px 15px black ;
+    }

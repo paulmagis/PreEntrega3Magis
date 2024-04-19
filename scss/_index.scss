@@ -1,0 +1,41 @@
+@import "utilities/colors";
+
+
+#body-index {
+    color: $Text-color1;
+    background-color: $BG-color;
+    #carouselExampleCaptions{
+        .carousel-item img {
+            height: 500px; /* Ajusta a la altura deseada */
+            object-fit: cover; /* Mantiene el aspecto de la imagen */
+        }
+        .carousel-caption {
+            h5  {
+            color: $BG-color; /* Cambia el color */
+            font-size: 50px; /* Cambia el tamaño de la fuente */
+            font-weight: bold; /* Hace el texto negrita */
+            text-shadow: 1px 1px 0 $Shadow-color; /* Sombra del texto para hacerlo parecer más ancho */
+            background-color: $background-color-text; /* Verde oscuro con 50% de transparencia */
+            padding: 5px; /* Añade espacio alrededor del texto */
+            }
+            p {
+            color: $BG-color; /* Cambia el color */
+            font-size: 40px; /* Cambia el tamaño de la fuente */
+            font-weight: bold; /* Hace el texto negrita */
+            text-shadow: 1px 1px 0 $Shadow-color; /* Sombra del texto para hacerlo parecer más ancho */
+            background-color:$background-color-text; /* Verde oscuro con 50% de transparencia */
+            padding: 5px; /* Añade espacio alrededor del texto */
+            }
+            a {
+                color:$BG-color; /* Cambia el color */
+                font-size: 20px; /* Cambia el tamaño de la fuente */
+                font-weight: bold; /* Hace el texto negrita */
+                text-shadow: 1px 1px 0 $Shadow-color; /* Sombra del texto para hacerlo parecer más ancho */
+                background-color: $background-color-text; /* Verde oscuro con 50% de transparencia */
+                padding: 5px; /* Añade espacio alrededor del texto */
+            }
+        }
+       
+    }
+}
+
