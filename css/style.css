@@ -71,11 +71,7 @@
   width: 300px;
 }
 #BodyNosotros main .Imagen img:hover {
-<<<<<<< HEAD
-  width: 400px;
-=======
   width: 350px;
->>>>>>> develop
 }
 #BodyNosotros section {
   background-color: #2C4018;
@@ -89,19 +85,11 @@
   flex-wrap: wrap;
 }
 #BodyNosotros section div {
-<<<<<<< HEAD
-  width: 500px;
-  text-align: center;
-}
-#BodyNosotros section div img {
-  width: 200px;
-=======
   width: 300px;
   text-align: center;
 }
 #BodyNosotros section div img {
   width: 100px;
->>>>>>> develop
 }
 #BodyNosotros footer {
   margin-top: 20px;
@@ -123,13 +111,8 @@
   height: 225px;
 }
 #BodyProductos .ProductoImagen img:hover {
-<<<<<<< HEAD
-  width: 500px;
-  height: 425px;
-=======
   width: 360px;
   height: 285px;
->>>>>>> develop
 }
 #BodyProductos .ProductoImagenTexto {
   width: 280px;
@@ -176,9 +159,6 @@
 #body-poligono {
   color: #081304;
   background-color: #E3F26D;
-<<<<<<< HEAD
-}
-=======
   cursor: url("../imagenes/miraArmaPuntero.png"), auto;
 }
 @keyframes girar {
@@ -206,7 +186,6 @@
   animation-fill-mode: forwards; /* Mantiene el estado final después de terminar la animación */
   animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
 }
->>>>>>> develop
 #body-poligono .grid-container-rows {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -223,24 +202,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-<<<<<<< HEAD
-}
-
-header {
-  display: flex; /*Activamos el Flexbox*/
-  flex-direction: row; /* Comienza apilando los elementos verticalmente */
-  align-items: center;
-  justify-content: space-around; /* Distribuimos el espacio: la imagen a la izquierda, el nav a la derecha, y el h1 en el centro */
-  text-align: center; /*Asegura que el texto dentro del h1 ete centrado*/
-  flex-wrap: wrap;
-  background-color: #2C4018;
-  color: #b3ce5a;
-  margin: 1%;
-  padding: 2% 2% 2% 0%;
-  box-shadow: 5px 5px 15px black;
-}
-
-=======
 }
 #body-poligono .grid-container-rows .grid-item .grid-container-column .img1 {
   transition: transform 0.5s ease;
@@ -279,7 +240,7 @@ header {
 }
 #body-poligono .grid-container-rows .grid-item .grid-container-column .img7 {
   animation-name: girar; /* Nombre de la animación definida */
-  animation-duration: 6s; /* Duración de la animación */
+  animation-duration: 3s; /* Duración de la animación */
   animation-timing-function: linear; /* Función de tiempo para la transición */
   animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
 }
@@ -375,7 +336,6 @@ header {
   box-shadow: 5px 5px 15px black;
 }
 
->>>>>>> develop
 .header {
   display: flex; /*Activamos el Flexbox*/
   flex-direction: row; /* Comienza apilando los elementos verticalmente */
