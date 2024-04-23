@@ -1,0 +1,28 @@
+@import "utilities/colors";
+@import "utilities/variables";
+#body-gestoria  {
+    color: $Text-color1;
+    background-color: $BG-color;
+     main {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        margin: 100px;   
+        flex-wrap: wrap;  
+        .Textos {
+            text-align: center;
+            h2  {
+                margin: 10px;     
+                span {
+                    display: block;
+                }
+            }
+          
+        } 
+    footer {
+        margin-top: $Footer-Body-Nosotros;
+        text-align: center; 
+    }
+}
+}

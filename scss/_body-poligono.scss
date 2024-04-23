@@ -4,6 +4,29 @@
 #body-poligono  {
     color: $Text-color1;
     background-color: $BG-color;
+    @keyframes girar {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    @keyframes aparecerYcrecer {
+        from {
+          opacity: 0; /* Comienza totalmente transparente */
+          transform: scale(1); /* Comienza con el tamaño normal */
+        }
+        to {
+          opacity: 1; /* Termina totalmente opaco */
+          transform: scale(1.1); /* Aumenta un 10% su tamaño */
+        }
+      }
+    
+   cursor: url("../imagenes/miraArmaPuntero.png"),auto;
+   h2 {
+    animation-name: aparecerYcrecer;
+    animation-duration: 2s; /* Duración de 2 segundos */
+    animation-timing-function: ease-out; /* Aceleración al principio y desaceleración al final */
+    animation-fill-mode: forwards; /* Mantiene el estado final después de terminar la animación */
+    animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
+  }
     .grid-container-rows {
         @include grid-display-rows($num-rows, $gap);
         .grid-item {
@@ -15,8 +38,31 @@
                 @include grid-display-columns($num-cols, $gap);
                 .img1 { transition : transform 0.5s ease;
                 display: block;}
-                .img1:hover { transform: rotate(180deg);
+                .img1:hover { transform: rotate(180deg) scale(-1,-1);
                 }
+                .img2 { transition : transform 0.5s ease;
+                    display: block;}
+                .img2:hover { transform: rotateX(-92deg);
+                    }
+                .img3 { transition : transform 0.5s ease;
+                    display: block;}
+                .img3:hover { transform: rotateY(92deg);
+                 }
+                 .img5 { transition : transform 0.5s ease;
+                    display: block;}
+                .img5:hover { transform: skewX(45deg);
+                 }
+                 
+                 .img6 { transition : transform 0.5s ease;
+                   display: block;}
+                .img6:hover{ transform: rotateX(92deg);
+                 }
+                .img7 {
+                    animation-name: girar; /* Nombre de la animación definida */
+                    animation-duration: 6s; /* Duración de la animación */
+                    animation-timing-function: linear; /* Función de tiempo para la transición */
+                    animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
+                  }
                 .gradiente-lineal { transition : transform 0.5s ease;
                     display: block; 
                 }

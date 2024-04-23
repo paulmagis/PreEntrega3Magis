@@ -71,7 +71,7 @@
   width: 300px;
 }
 #BodyNosotros main .Imagen img:hover {
-  width: 400px;
+  width: 350px;
 }
 #BodyNosotros section {
   background-color: #2C4018;
@@ -85,11 +85,11 @@
   flex-wrap: wrap;
 }
 #BodyNosotros section div {
-  width: 500px;
+  width: 300px;
   text-align: center;
 }
 #BodyNosotros section div img {
-  width: 200px;
+  width: 100px;
 }
 #BodyNosotros footer {
   margin-top: 20px;
@@ -111,8 +111,8 @@
   height: 225px;
 }
 #BodyProductos .ProductoImagen img:hover {
-  width: 500px;
-  height: 425px;
+  width: 360px;
+  height: 285px;
 }
 #BodyProductos .ProductoImagenTexto {
   width: 280px;
@@ -159,6 +159,32 @@
 #body-poligono {
   color: #081304;
   background-color: #E3F26D;
+  cursor: url("../imagenes/miraArmaPuntero.png"), auto;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes aparecerYcrecer {
+  from {
+    opacity: 0; /* Comienza totalmente transparente */
+    transform: scale(1); /* Comienza con el tamaño normal */
+  }
+  to {
+    opacity: 1; /* Termina totalmente opaco */
+    transform: scale(1.1); /* Aumenta un 10% su tamaño */
+  }
+}
+#body-poligono h2 {
+  animation-name: aparecerYcrecer;
+  animation-duration: 2s; /* Duración de 2 segundos */
+  animation-timing-function: ease-out; /* Aceleración al principio y desaceleración al final */
+  animation-fill-mode: forwards; /* Mantiene el estado final después de terminar la animación */
+  animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
 }
 #body-poligono .grid-container-rows {
   display: grid;
@@ -182,7 +208,41 @@
   display: block;
 }
 #body-poligono .grid-container-rows .grid-item .grid-container-column .img1:hover {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scale(-1, -1);
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img2 {
+  transition: transform 0.5s ease;
+  display: block;
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img2:hover {
+  transform: rotateX(-92deg);
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img3 {
+  transition: transform 0.5s ease;
+  display: block;
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img3:hover {
+  transform: rotateY(92deg);
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img5 {
+  transition: transform 0.5s ease;
+  display: block;
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img5:hover {
+  transform: skewX(45deg);
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img6 {
+  transition: transform 0.5s ease;
+  display: block;
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img6:hover {
+  transform: rotateX(92deg);
+}
+#body-poligono .grid-container-rows .grid-item .grid-container-column .img7 {
+  animation-name: girar; /* Nombre de la animación definida */
+  animation-duration: 6s; /* Duración de la animación */
+  animation-timing-function: linear; /* Función de tiempo para la transición */
+  animation-iteration-count: infinite; /* Número de veces que la animación se repetirá */
 }
 #body-poligono .grid-container-rows .grid-item .grid-container-column .gradiente-lineal {
   transition: transform 0.5s ease;
@@ -208,6 +268,58 @@
 }
 #body-poligono .grid-container-rows .grid-item .grid-container-column .img4:hover {
   transform: translateX(-400px);
+}
+
+#body-cursos {
+  color: #081304;
+  background-color: #E3F26D;
+}
+#body-cursos main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+  flex-wrap: wrap;
+}
+#body-cursos main .Textos {
+  text-align: center;
+}
+#body-cursos main .Textos h2 {
+  margin: 10px;
+}
+#body-cursos main .Textos h2 span {
+  display: block;
+}
+#body-cursos main footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#body-gestoria {
+  color: #081304;
+  background-color: #E3F26D;
+}
+#body-gestoria main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+  flex-wrap: wrap;
+}
+#body-gestoria main .Textos {
+  text-align: center;
+}
+#body-gestoria main .Textos h2 {
+  margin: 10px;
+}
+#body-gestoria main .Textos h2 span {
+  display: block;
+}
+#body-gestoria main footer {
+  margin-top: 20px;
+  text-align: center;
 }
 
 header {
